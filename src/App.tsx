@@ -16,6 +16,7 @@ function App() {
           <Route path="/calculator" element={<Home />} />
           <Route path="/school" element={<SchoolPage />} />
           <Route path="/chat" element={<ChatPage />} />
+          <Route path="*" element={<HomePage />} />
         </Routes>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </Layout>
